@@ -1,11 +1,5 @@
-pluginManagement {
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "kotlin-platform-common") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${requested.version}")
-            }
-        }
-    }
-}
 rootProject.name = 'markup'
+include 'markup-common'
+include 'markup-jvm'
+include 'markup-js'
 

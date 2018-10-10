@@ -1,0 +1,19 @@
+apply plugin: 'kotlin-platform-common'
+
+group 'com.chrynan'
+version '0.1.1'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-common"
+
+    implementation 'com.github.chRyNaN.spannable:spannable-common:v1.0.2'
+
+    testCompile "org.jetbrains.kotlin:kotlin-test-annotations-common"
+    testCompile "org.jetbrains.kotlin:kotlin-test-common"
+}
+
